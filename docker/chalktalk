@@ -1,0 +1,8 @@
+#!/bin/bash
+
+workdir="$PWD"
+
+docker run \
+       --ipc host \
+       --expose 11235 \
+       sritchie/chalktalk "$@"
